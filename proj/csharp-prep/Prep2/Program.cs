@@ -4,27 +4,20 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("What is your first name?");
-        string first = Console.ReadLine();
-
-        Console.Write("What is your last name?");
-        string last = Console.ReadLine();
-
-        Console.WriteLine($"Your name is {first}, {first}  {last}. ");
-
+        
         Console.Write("What is your % mark?");
         string mark = Console.ReadLine();
         int score = int.Parse(mark);
 
         string letter = "";
 
-        if (score >= 90)
+        if (score >= 90 && score<=93 )
         {
-            letter = "A";
+            letter = "A-";
         }
-        else if (score >= 80)
+        else if (score >= 80 && score<=83)
         {
-            letter = "B";
+            letter = "B-";
         }
         else if (score >= 70)
         {
