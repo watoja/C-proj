@@ -10,12 +10,13 @@ class Program
         int score = int.Parse(mark);
 
         string letter = "";
+        
 
-        if (score >= 90 && score<=93 )
+        if (score >= 90 )
         {
             letter = "A-";
         }
-        else if (score >= 80 && score<=83)
+        else if (score >= 80)
         {
             letter = "B-";
         }
@@ -31,6 +32,7 @@ class Program
         {
             letter = "F";
         }
+        
         Console.WriteLine($"Your grade is:{letter}");
         if (score >= 70)
         {
