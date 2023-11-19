@@ -1,0 +1,3 @@
+Reading the Book of Mormon,50
+Practicing coding in C#,50
+Relaxing,12
