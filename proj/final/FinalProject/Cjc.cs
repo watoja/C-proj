@@ -15,6 +15,6 @@ public class Cjc : Org
     public void GetBooksAndLessons() // Explicitly implementing the method
     {
         Console.WriteLine("Retrieving Books and Lessons Information...");
-        // Add your implementation to get Books and Lessons information
+        //get more books and lessons
     }
 }

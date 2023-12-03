@@ -28,7 +28,7 @@ public class Program
         };
 
         cjc.GetLeadershipAndAreas();
-        ((Cjc)cjc).GetBooksAndLessons(); // Cast to access specific methods
+        ((Cjc)cjc).GetBooksAndLessons(); 
 
         // Using polymorphism to display organization details
         organization = new Org
