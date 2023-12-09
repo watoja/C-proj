@@ -1,23 +1,13 @@
-using System;
 using System.Collections.Generic;
 
-public class BYUIdaho : EducationalOrganization
+public class BYUIdaho : Organization
 {
-    public strin Sector {get;set;}
-    public string System { get; set; }
-    public List<string> Certificates { get; set; }
-
-    public BYUIdaho()
+    public BYUIdaho(string name, List<string> type, string introduction, string year, List<string> certificates, string systemName, List<string> groups, int age)
+        : base(name, type, introduction, year, new List<string>(), new List<string>(), groups, age)
     {
-        Certificates = new List<string>();
-        System = "";
+        Certificates = certificates;
+        SystemName = systemName;
     }
-
-    public override void DisplayDetails()
-    {
-        Console.WriteLine($"Type: {string.Join(", ", Type)}");
-        Console.WriteLine($"Name: {Name}");
-        Console.WriteLine($"Certificates: {string.Join(", ", Certificates)}");
-        Console.WriteLine($"System: {System}");
-    }
+    public List<string> Certificates {get; set;}
+    public string SystemName {get; set;}
 }

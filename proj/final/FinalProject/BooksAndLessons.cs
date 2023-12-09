@@ -8,6 +8,8 @@ public class BooksAndLessons
     public string MissionaryWork { get; set; }
     public string Institute { get; set; }
 
+    // Additional properties or methods can be added here
+
     public BooksAndLessons()
     {
         Books = new List<string>();
@@ -15,4 +17,9 @@ public class BooksAndLessons
         MissionaryWork = "";
         Institute = "";
     }
+
+
+    
+
+    // You can add more methods based on your requirements
 }

@@ -1,0 +1,30 @@
+Organization Details:
+Name: Brigham Young University.
+Types: Private educational.
+Introduction: Started in 1888 as brigham Young Academy.In 2001, it became Brigham Young University. It is affiliated with the Church of Jesus Christ of Latter-day saints and follows the Church Education System. All campus and online dwellers are posed to comply to the Honor Code of conduct.
+Year: 1888
+Leadership: 
+Areas: 
+Groups: New students,  Returning Students and Alumni.
+Age: 18
+
+Organization Details:
+Name: Cjc
+Types: 
+Introduction: Introduction for Cjc
+Year: 2023
+Leadership: First Presidency, Quorum of the twelve Apostles,  Quorum of the Seventy...(etc)
+Areas: Asia,  Africa South,  Africa North,  Pacific,  America Central...(etc)
+Groups: Primary,  Young Men,  Young Women,  Relief Society,  Elders Quorum,  Bishopric.
+Age: 0
+
+Organization Details:
+Name: Church of Jesus Christ Of Latter-day Saints.
+Types: Non-Profit
+Introduction: The church is an entity to make known the greatness of God and His matchless love in the times that the prophets of Old foretold. It is a mark of god's unfailing love to return all ordinances required to bind men with God.
+Year: 1830
+Leadership: Ancient church organisation
+Areas: Worldwide
+Groups: All are welcome
+Age: 0
+

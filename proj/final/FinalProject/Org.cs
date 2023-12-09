@@ -1,39 +1,18 @@
-public class Org
+using System;
+using System.Collections.Generic;
+
+public class Org : Organization
 {
-    public string Year {get; set;}
-    public string Name {get; set;}
-    public string Introduction { get;set;}
-    public string Type {get;set;}
-    public List<string> Leadership { get; set; }
-    public List<string> Areas { get; set; }
-    public List<string> Groups { get; set; }
-    public int Age { get; set; }
-
-    public void GetLeadershipAndAreas()
+    public Org(string name, List<string> type, string introduction, string year, List<string> leadership, List<string> areas, List<string> groups, int age)
+        : base(name, type, introduction, year, leadership, areas, groups, age)
     {
-        Console.WriteLine("Leadership: " + string.Join(", ", Leadership));
-        Console.WriteLine("Areas: " + string.Join(", ", Areas));
+        Name = name;
+        Type = type;
+        Introduction = introduction;
+        Year = year;
+        Leadership = leadership;
+        Areas = areas;
+        Groups = groups;
+        Age = age;
     }
-
-    public void GetGroupsAndAge()
-    {
-        Console.WriteLine("Groups: " + string.Join(", ", Groups));
-        Console.WriteLine("Age: " + Age);
-    }
-}
-
-public class Cjc : Org
-{
-    public string BriefHistory { get; set; }
-    public List<string> Articles { get; set; }
-    public new List<string> Type { get; set; }
-    public string Leader { get; set; }
-
-    public void GetMoreAbout()
-    {
-        Console.WriteLine($"Brief History: {BriefHistory}");
-        Console.WriteLine($"Beliefs: {string.Join(", ", Articles)}")
-    }
-
-   
 }
