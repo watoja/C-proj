@@ -17,7 +17,7 @@ public class MainProgram
 
         // Display CJC details
         cjc.GetLeadershipAndAreas();
-        cjc.GetBooksAndLessons();
+        cjc.GetBooksAndLessons();  // Call the new method to get Books and Lessons information
 
         // Using polymorphism to display organization details
         Organization org = GetOrgInformation();
@@ -66,7 +66,6 @@ public class MainProgram
         return new BYUIdaho(name, types, introduction, year, certificates, system, groups, age);
     }
 
-
     static Cjc GetCjcInformation()
     {
         Console.WriteLine("\nThe Church of Jesus Christ of Latter-day Saints:");
@@ -100,12 +99,12 @@ public class MainProgram
 
     static Organization GetOrgInformation()
     {
-        Console.WriteLine("\nEnter organization information (for polymorphism):");
+        Console.WriteLine("\nEnter organization information :");
 
         Console.Write("Name: ");
         string name = Console.ReadLine() ?? "";
 
-        Console.Write("Types (comma-separated): ");
+        Console.Write("Types : ");
         List<string> types = (Console.ReadLine()?.Split(',') ?? Array.Empty<string>()).ToList();
 
         Console.Write("Introduction: ");
@@ -114,19 +113,44 @@ public class MainProgram
         Console.Write("Year: ");
         string year = Console.ReadLine() ?? "";
 
-        Console.Write("Leadership (comma-separated): ");
+        Console.Write("Leadership: ");
         List<string> leadership = (Console.ReadLine()?.Split(',') ?? Array.Empty<string>()).ToList();
 
-        Console.Write("Areas (comma-separated): ");
+        Console.Write("Areas : ");
         List<string> areas = (Console.ReadLine()?.Split(',') ?? Array.Empty<string>()).ToList();
 
-        Console.Write("Groups (comma-separated): ");
+        Console.Write("Groups : ");
         List<string> groups = (Console.ReadLine()?.Split(',') ?? Array.Empty<string>()).ToList();
 
         Console.Write("Age: ");
         int age = int.Parse(Console.ReadLine() ?? "0");
 
         return new Org(name, types, introduction, year, leadership, areas, groups, age);
+    }
+
+    static BooksAndLessons GetBooksAndLessonsInformation()
+    {
+        Console.WriteLine("\nEnter Books and Lessons Information:");
+
+        Console.Write("Books : ");
+        List<string> books = (Console.ReadLine()?.Split(',') ?? Array.Empty<string>()).ToList();
+
+        Console.Write("Temples : ");
+        List<string> temples = (Console.ReadLine()?.Split(',') ?? Array.Empty<string>()).ToList();
+
+        Console.Write("Missionary Work: ");
+        string missionaryWork = Console.ReadLine() ?? "";
+
+        Console.Write("Institute: ");
+        string institute = Console.ReadLine() ?? "";
+
+        return new BooksAndLessons
+        {
+            Books = books,
+            Temples = temples,
+            MissionaryWork = missionaryWork,
+            Institute = institute
+        };
     }
 
     static void SaveToFile(Organization organization)
@@ -153,6 +177,29 @@ public class MainProgram
         else
         {
             Console.WriteLine("Organization information is null. Cannot save to file.");
+        }
+    }
+
+    static void SaveToFile(BooksAndLessons booksAndLessons)
+    {
+        if (booksAndLessons != null)
+        {
+            // Save Books and Lessons information to a file ("BooksAndLessonsInfo.txt")
+            using (StreamWriter writer = new StreamWriter("BooksAndLessonsInfo.txt", true))
+            {
+                writer.WriteLine($"Books and Lessons Details:");
+                writer.WriteLine($"Books: {string.Join(", ", booksAndLessons.Books)}");
+                writer.WriteLine($"Temples: {string.Join(", ", booksAndLessons.Temples)}");
+                writer.WriteLine($"Missionary Work: {booksAndLessons.MissionaryWork}");
+                writer.WriteLine($"Institute: {booksAndLessons.Institute}");
+                writer.WriteLine();
+            }
+
+            Console.WriteLine("Books and Lessons information saved to file.");
+        }
+        else
+        {
+            Console.WriteLine("Books and Lessons information is null. Cannot save to file.");
         }
     }
 }

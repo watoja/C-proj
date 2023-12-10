@@ -28,3 +28,33 @@ Areas: Worldwide
 Groups: All are welcome
 Age: 0
 
+Organization Details:
+Name: Brigham Young University, Idaho.
+Types: Private,  Educational.
+Introduction: Started in 1888 as Brigham Young Academy and changed names till 2001 when it earned its current name.
+Year: 1888
+Leadership: 
+Areas: 
+Groups: New students,  Returning students,  Alumni.
+Age: 135
+
+Organization Details:
+Name: Cjc
+Types: 
+Introduction: Introduction for Cjc
+Year: 2023
+Leadership: First Presidency,  Quorum of the Twelve Apostles,  Quorum of the Seventy.
+Areas: Asia,  Africa South,  Africa North,  pacific,  America central...(etc)
+Groups: Primary,  Young Women,  Young Men,  Relief Society,  Elders' Quorum,  Bishopric.
+Age: 193
+
+Organization Details:
+Name: Any name
+Types: non profit,  Religious,  political
+Introduction: All organisations have a demacated standard of procedure
+Year: Establishment
+Leadership: director
+Areas: Worldwide
+Groups: All ages
+Age: 0
+
