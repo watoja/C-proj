@@ -17,6 +17,8 @@ public class MainProgram
 
         // Display CJC details
         cjc.GetLeadershipAndAreas();
+
+        BooksAndLessons booksAndLessons = GetBooksAndLessonsInformation();
         cjc.GetBooksAndLessons();  // Call the new method to get Books and Lessons information
 
         // Using polymorphism to display organization details
@@ -33,7 +35,7 @@ public class MainProgram
 
     static Organization GetOrganizationInformation()
     {
-        Console.WriteLine("About Byu-I:");
+        Console.WriteLine(" Affiliated Organisation:");
 
         Console.Write("Name: ");
         string name = Console.ReadLine() ?? "";
@@ -44,7 +46,7 @@ public class MainProgram
         Console.Write("Introduction: ");
         string introduction = Console.ReadLine() ?? "";
 
-        Console.Write("Year: ");
+        Console.Write("established: ");
         string year = Console.ReadLine() ?? "";
 
         Console.Write("Certificates (comma-separated): ");
@@ -68,7 +70,7 @@ public class MainProgram
 
     static Cjc GetCjcInformation()
     {
-        Console.WriteLine("\nThe Church of Jesus Christ of Latter-day Saints:");
+        Console.WriteLine("\nOrganisation:");
 
         Console.Write("Leadership : ");
         List<string> leadership = (Console.ReadLine()?.Split(',') ?? Array.Empty<string>()).ToList();
