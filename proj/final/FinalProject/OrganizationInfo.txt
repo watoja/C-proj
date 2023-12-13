@@ -1,0 +1,30 @@
+Organization Details:
+Name: Brigham Young University- Idaho.
+Types: Private
+Introduction: This is a Church of Jesus Christ of Latter-day Saints affiliated institution and offers education in a holistic atmosphere.
+Year: 1888 as Brigham Young Academy.
+Leadership: 
+Areas: 
+Groups: On-Campus students and online Students;- NEW AND RETURNING STUDENTS.
+Age: 18
+
+Organization Details:
+Name: Cjc
+Types: 
+Introduction: Introduction for Cjc
+Year: 2023
+Leadership: President of the Church of Jesus Christ of Latter-day Saints
+Areas: Asia,  Pacific,  Africa South,  Africa Central,  America central...(etc).
+Groups: Primary,  Young Women,  Young Men,  Relief Society,  Elders' quorum,  Bishopric.
+Age: 8
+
+Organization Details:
+Name: Church of Jesus Christ of Latter-day Saints.
+Types: Religious
+Introduction: The church was established as the ancient church in the restoration of all things as declared in the scriptures about the end times. Organised in the same way with Jesus Chirst being the chief cornerstone, apostles and prophets as the foundation.
+Year: 1830
+Leadership: First presidency(3),  Quorum of the Twelve Apostles(12),  Qourum of the Seventy(70).
+Areas: Asia,  Africa South,  Pacific,  Africa Central..(etc).
+Groups: Primary, Young Women,  Young Men,  Elders' quorum,  Relief Society,  Bishopric.
+Age: 8
+

@@ -40,22 +40,22 @@ public class MainProgram
         Console.Write("Name: ");
         string name = Console.ReadLine() ?? "";
 
-        Console.Write("Types (comma-separated): ");
+        Console.Write("Types (,): ");
         List<string> types = (Console.ReadLine()?.Split(',') ?? Array.Empty<string>()).ToList();
 
         Console.Write("Introduction: ");
         string introduction = Console.ReadLine() ?? "";
 
-        Console.Write("established: ");
+        Console.Write("Established: ");
         string year = Console.ReadLine() ?? "";
 
-        Console.Write("Certificates (comma-separated): ");
+        Console.Write("Certificates (,): ");
         List<string> certificates = (Console.ReadLine()?.Split(',') ?? Array.Empty<string>()).ToList();
 
         Console.Write("System: ");
         string system = Console.ReadLine() ?? "";
 
-        Console.Write("Groups (comma-separated): ");
+        Console.Write("Groups (,): ");
         List<string> groups = (Console.ReadLine()?.Split(',') ?? Array.Empty<string>()).ToList();
 
         Console.Write("Age: ");
@@ -95,7 +95,7 @@ public class MainProgram
 
         Console.Write("Leader: ");
         string leader = Console.ReadLine() ?? "";
-
+ 
         return new Cjc(leadership, areas, groups, age, briefHistory, articles, sector, leader);
     }
 
@@ -187,21 +187,14 @@ public class MainProgram
         if (booksAndLessons != null)
         {
             // Save Books and Lessons information to a file ("BooksAndLessonsInfo.txt")
-            using (StreamWriter writer = new StreamWriter("BooksAndLessonsInfo.txt", true))
+            using (StreamWriter writer = new StreamWriter("BooksAndlessonsInfo.txt", true))
             {
                 writer.WriteLine($"Books and Lessons Details:");
                 writer.WriteLine($"Books: {string.Join(", ", booksAndLessons.Books)}");
                 writer.WriteLine($"Temples: {string.Join(", ", booksAndLessons.Temples)}");
-                writer.WriteLine($"Missionary Work: {booksAndLessons.MissionaryWork}");
-                writer.WriteLine($"Institute: {booksAndLessons.Institute}");
-                writer.WriteLine();
+                writer.WriteLine($"Missionary work: {string.Join(", ", booksAndLessons.MissionaryWork)}");
+                writer.WriteLine($"Institute: {string.Join(", ", booksAndLessons.Institute)}");
             }
-
-            Console.WriteLine("Books and Lessons information saved to file.");
-        }
-        else
-        {
-            Console.WriteLine("Books and Lessons information is null. Cannot save to file.");
         }
     }
 }

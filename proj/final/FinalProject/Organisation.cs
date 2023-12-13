@@ -1,5 +1,10 @@
+using System;
+using System.Collections.Generic;
+
+//organisation class
 public class Organization
 {
+    //constructor for properties
     public Organization(string name, List<string> type, string introduction, string year, List<string> leadership, List<string> areas, List<string> groups, int age)
     {
         Name = name;
@@ -21,7 +26,8 @@ public class Organization
     public List<string> Groups { get; set; }
     public int Age { get; set; }
 
-    public void DisplayDetails()
+//displaying details for organisation
+    public virtual void DisplayDetails()
     {
         Console.WriteLine($"Organization Details: {Name}, {Year}, {Introduction}");
     }
